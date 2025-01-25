@@ -10,10 +10,14 @@
     "prepare": "svelte-kit sync || echo ''"
   },
   "devDependencies": {
+    "@bull-board/api": "^6.7.1",
+    "@bull-board/hono": "^6.7.1",
+    "@hono/node-server": "^1.13.7",
     "@sveltejs/adapter-node": "^5.2.12",
     "@sveltejs/kit": "^2.16.1",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "bullmq": "^5.37.0",
+    "hono": "^4.6.18",
     "ioredis": "^5.4.2",
     "svelte": "^5.19.3",
     "vite": "^6.0.11"

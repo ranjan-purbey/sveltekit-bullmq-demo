@@ -24,6 +24,7 @@ export const setupBullMQProcessor = () => {
 
       return `This is the return value of job (${job.id})`;
     },
+    // https://docs.bullmq.io/bull/patterns/persistent-connections#maxretriesperrequest
     { connection: new IORedis(REDIS_URL, { maxRetriesPerRequest: null }) }
   );
 };
