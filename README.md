@@ -1,38 +1,29 @@
-# sv
+# BullMQ with SvelteKit
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Simple example to set up background jobs in a [SvelteKit](https://svelte.dev/docs/kit/introduction) app using [BullMQ](https://docs.bullmq.io/)
 
-## Creating a project
+Read detailed explanation [here](https://dev.to/ranjanpurbey/background-jobs-in-sveltekit-with-bullmq-4dn3)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Usage
 
-```bash
-# create a new project in the current directory
-npx sv create
+1. Clone this repo
 
-# create a new project in my-app
-npx sv create my-app
-```
+1. Install dependencies
 
-## Developing
+   ```shell
+   pnpm i
+   ```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+1. Add `REDIS_URL` in your `.env` file.
 
-```bash
-npm run dev
+1. Start the dev server
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+   ```shell
+   pnpm dev
+   ```
 
-## Building
+   or build and preview
 
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+   ```shell
+   pnpm build && pnpm preview
+   ```
